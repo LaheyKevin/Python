@@ -29,7 +29,7 @@ def deleteItem(item):
 def showList():
     print("Todo List:")
     for item in todo:
-        print("- "+item[0]+", "+item[1])
+        print(f"- {item[0]}, {item[1]}")
     input("")
     
 def clearList():

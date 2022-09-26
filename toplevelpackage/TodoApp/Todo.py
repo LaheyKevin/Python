@@ -1,3 +1,5 @@
+# pylint: disable=missing-docstring
+
 import json
 from datetime import datetime
 
@@ -30,6 +32,7 @@ def showList():
     print("Todo List:")
     for item in todo:
         print(f"- {item[0]}, {item[1]}")
+
     input("")
     
 def clearList():

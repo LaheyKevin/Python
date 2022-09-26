@@ -1,7 +1,9 @@
-import TodoApp.Todo as Todo
-import os
+# pylint: disable=missing-docstring
 
-def Menu():
+import os
+import toplevelpackage.TodoApp.Todo as Todo
+
+def menu():
     os.system("cls")
     print("################")
     print("      Todo")
@@ -23,11 +25,11 @@ def Menu():
         case "4":
             Todo.clearList()
     os.system("cls")
-    Menu()
+    menu()
 
 def main():
     Todo.openFile()
-    Menu()
+    menu()
 
 if __name__ == "__main__":
     main()

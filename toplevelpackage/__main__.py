@@ -3,6 +3,7 @@
 import os
 import toplevelpackage.TodoApp.Todo as Todo
 
+
 def menu():
     os.system("cls")
     print("################")
@@ -27,9 +28,11 @@ def menu():
     os.system("cls")
     menu()
 
+
 def main():
     Todo.openFile()
     menu()
+
 
 if __name__ == "__main__":
     main()

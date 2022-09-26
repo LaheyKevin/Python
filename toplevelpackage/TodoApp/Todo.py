@@ -25,7 +25,11 @@ def addItem(item):
     updateFile()
 
 def deleteItem(item):
-    todo.remove(item)
+    for i in range(len(todo)):
+        if todo[i][0] == item:
+            todo.remove(todo[i])
+            break
+
     updateFile()
 
 def showList():
